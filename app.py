@@ -27,11 +27,11 @@ def predict():
         image_file = images[prediction]
 
         return render_template('index.html',
-                               prediction_text=f'🌸 Predicted Iris Species: {result}',
+                               prediction_text=f' Predicted Iris Species: {result}',
                                image_file=image_file)
     except:
         return render_template('index.html',
-                               prediction_text="❌ Invalid input! Please enter valid numbers.")
+                               prediction_text=" Invalid input! Please enter valid numbers.")
 
 
 if __name__ == '__main__':
